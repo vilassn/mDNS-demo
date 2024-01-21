@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/identity_label"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText android:layout_width="wrap_content" android:layout_height="match_parent"
+            android:minWidth="15dp"
+            android:hint="@string/your_name"
+            android:id="@+id/identity_box"
+            android:autofillHints=""
+            android:inputType="" />
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/ok_button"
+            android:text="@string/ok_button_text"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/discovered_peers_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/discovered_peers" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/peer_list" android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
+
